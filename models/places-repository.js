@@ -38,7 +38,7 @@ class PlacesRepository {
     }
 
     static remove(place) {
-        places = places.filter(x => x === place);
+        places = places.filter(x => x !== place);
     }
 
     static tryMove(place, offset) {
